@@ -116,6 +116,8 @@
   /* ---------- headings block ---------- */
   .h-block{margin-bottom:8px;}
   h2{font-size:clamp(1.4rem,3.6vw,1.85rem); margin:0 0 26px;}
+  h2 .h2l1{display:block;}
+  @media (max-width:600px){ h2 .h2l2{display:block;} h2 .h2l1,h2 .h2l2,h2 .h2l3{white-space:nowrap;} }
 
   /* ---------- ABOUT ---------- */
   .profile{display:flex; gap:24px; align-items:center; flex-wrap:wrap; margin-bottom:8px;}
@@ -276,7 +278,7 @@
 <section id="worry">
   <div class="wrap">
     <p class="eyebrow">Concerns</p>
-    <div class="h-block"><h2>日々の業務に、<br>こんなモヤモヤを感じていませんか？</h2></div>
+    <div class="h-block"><h2><span class="h2l1">日々の業務に、</span><span class="h2l2">こんなモヤモヤを</span><span class="h2l3">感じていませんか？</span></h2></div>
     <div class="worry-box">
       <ul>
         <li>事務や雑務に追われて、本来の仕事に集中できない</li>
